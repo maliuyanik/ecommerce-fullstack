@@ -4,37 +4,37 @@ ARTICOM is an AI-powered platform designed to optimize product visuals and gener
 
 ---
 
-## 🎥 Demo Video
+## Demo Video
 
 [![ARTICOM Demo Video](http://img.youtube.com/vi/kfcDh89I4D8/0.jpg)](https://youtu.be/kfcDh89I4D8)
 
 ---
 
-## 🚀 About the Project
+## About the Project
 
 ARTICOM automatically removes backgrounds, enhances product images with AI, and generates SEO-optimized product titles and descriptions. It empowers e-commerce sellers to present their products in a clean, professional, and engaging way.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-1. **📸 Visual Optimization**
+1. ** Visual Optimization**
    - AI-powered background removal
    - Realistic background generation using Stable Diffusion + ControlNet
 
-2. **📝 Content Generation**
+2. ** Content Generation**
    - GPT-3.5-based SEO-friendly product titles and descriptions
    - Instant text creation based on product and theme
 
-3. **⚡ User-Friendly Experience**
+3. ** User-Friendly Experience**
    - Modern responsive UI with React + TailwindCSS
 
-4. **🔗 Export and Sharing**
+4. ** Export and Sharing**
    - Download and share generated visuals across platforms
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer             | Technologies                                 |
 |------------------|----------------------------------------------|
@@ -45,7 +45,7 @@ ARTICOM automatically removes backgrounds, enhances product images with AI, and 
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. **Clone the Repository**
 
@@ -92,7 +92,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ---
 
-## 📖 Example API Endpoints
+## Example API Endpoints
 
 ### `/api/ai/scenario` (POST)
 - Handles image cleaning, inpainting, and text generation.
@@ -118,10 +118,16 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ---
 
-## 📬 Contact
-For any questions or collaboration inquiries, feel free to reach out via [GitHub](https://github.com/muhammedaliuyanik).
+## DevOps & CI/CD
+- CI: GitHub Actions runs lint + unit tests on push (client + server).
+- Containerization: Dockerfiles for client and server; docker-compose for local dev.
+- Deploy: one-click to Render/Heroku/Fly.io; artifacts built in CI and pushed as images.
 
----
+### Run with Docker
+docker compose up --build
 
-> This project is actively being developed and has been submitted to national startup support programs.
+### Environment
+Copy .env.example to:
+- client/.env: VITE_BACKEND_URL, VITE_CLERK_PUBLISHABLE_KEY
+- server/.env: MONGODB_URI, OPENAI_API_KEY, HUGGINGFACE_TOKEN
 
