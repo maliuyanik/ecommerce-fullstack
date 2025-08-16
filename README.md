@@ -18,18 +18,18 @@ ARTICOM automatically removes backgrounds, enhances product images with AI, and 
 
 ## Key Features
 
-1. ** Visual Optimization**
+1.  Visual Optimization**
    - AI-powered background removal
    - Realistic background generation using Stable Diffusion + ControlNet
 
-2. ** Content Generation**
+2.  Content Generation**
    - GPT-3.5-based SEO-friendly product titles and descriptions
    - Instant text creation based on product and theme
 
-3. ** User-Friendly Experience**
+3.  User-Friendly Experience**
    - Modern responsive UI with React + TailwindCSS
 
-4. ** Export and Sharing**
+4.  Export and Sharing**
    - Download and share generated visuals across platforms
 
 ---
